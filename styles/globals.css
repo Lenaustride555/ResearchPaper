@@ -24,4 +24,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    background: rgb(0,0,0);
+    /* background: linear-gradient(207deg, rgba(0,0,0,1) 33%, rgba(0,82,83,1) 55%); */
+    background: linear-gradient(143deg, rgba(0,0,0,1) 17%, rgba(0,82,83,1) 100%);
+    font-family: 'Courier Prime', monospace;
+
+    
 }
