@@ -59,7 +59,7 @@ const Register = () => {
           >
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
               <div className="flex flex-wrap -m-2">
-                <div className="flex lg:w-full w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
+                {/* <div className="flex lg:w-full w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4"> */}
                   <div className="relative sm:mb-0 flex-grow w-full">
                     <label
                       htmlFor="full-name"
@@ -76,7 +76,7 @@ const Register = () => {
                       name="full-name"
                       minLength="4"
                       maxLength="50"
-                      className="w-full bg-zinc-900 bg-opacity-40 rounded border border-zinc-900 focus:border-zinc-900 focus:ring-2 focus:ring-zinc-900 focus:bg-zinc-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full my-2 py-2 bg-teal-950 bg-opacity-40 rounded border border-teal-950 focus:border-zinc-900 focus:ring-2 focus:ring-zinc-900 focus:bg-zinc-900 text-base outline-none text-gray-100  px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
                   <div className="relative sm:mb-0 flex-grow w-full">
@@ -95,10 +95,10 @@ const Register = () => {
                       name="full-name"
                       minLength="4"
                       maxLength="50"
-                      className="w-full bg-zinc-900 bg-opacity-40 rounded border border-zinc-900 focus:border-zinc-900 focus:ring-2 focus:ring-zinc-900 focus:bg-zinc-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full my-2 py-2 bg-teal-950 bg-opacity-40 rounded border border-teal-950 focus:border-zinc-900 focus:ring-2 focus:ring-zinc-900 focus:bg-zinc-900 text-base outline-none text-gray-100  px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
-                </div>
+                {/* </div> */}
 
                 {/* </section> */}
                 <div className="p-2 w-full">
