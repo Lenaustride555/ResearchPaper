@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Navbar from "@/components/Navbar";
 const About = () => {
   return (
     <>
+    <Navbar/>
     <main className="h-screen container mx-auto px-4 py-8">
     <h1 className="text-3xl font-bold mb-4">About Us</h1>
     <p className="mb-6">We are a research repository website that aims to make research papers accessible to

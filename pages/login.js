@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { auth } from "@/firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,6 +34,7 @@ const Login = () => {
   }
   return (
     <>
+    <Navbar/>
       <section className="text-gray-400 bg-transparent body-font relative h-screen">
         <div className="container px-5 py-24 mx-auto">
           <button
