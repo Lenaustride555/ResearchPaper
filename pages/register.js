@@ -4,14 +4,14 @@ import { useRouter } from "next/router";
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 import { auth } from "@/firebaseConfig";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword   } from "firebase/auth";
 import Image from "next/image";
-const Login = () => {
+const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
   async function checkhtmlForm() {
-    signInWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         router.push("/dashboard")
@@ -43,7 +43,7 @@ const Login = () => {
           </button>
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-4xl md:text-4xl lg:text-6xl text-4xl font-medium title-font mb-4 text-white">
-              User Login
+              User Registeration
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
           </div>
@@ -104,7 +104,7 @@ const Login = () => {
                     type="submit"
                     className="flex mx-auto text-white bg-zinc-900 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg"
                   >
-                    Login
+                    Register
                   </button>
                 </div>
               </div>
@@ -128,4 +128,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
