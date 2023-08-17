@@ -32,6 +32,8 @@ const Navbar = () => {
             <Link className="mr-5 hover:text-white" href="/login">
               Login
             </Link>
+
+
           </nav>
           <button className="inline-flex items-center bg-stone-950 border-0 py-1 px-3 focus:outline-none hover:bg-teal-800 rounded text-base mt-4 md:mt-0">
             Logout
@@ -48,7 +50,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-      </header>
+      </header >
     </>
   );
 };
